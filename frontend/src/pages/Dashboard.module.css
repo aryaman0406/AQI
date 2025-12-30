@@ -1,0 +1,82 @@
+.dashboard {
+    padding: 2rem 2rem 2rem 6rem;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto 1fr;
+    gap: 1.5rem;
+}
+
+.header {
+    grid-column: span 12;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.statsGrid {
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.mainChart {
+    grid-column: span 8;
+    height: 400px;
+}
+
+.hotspots {
+    grid-column: span 4;
+    height: 400px;
+}
+
+.mapSection {
+    grid-column: span 12;
+    height: 500px;
+}
+
+.statCard {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.statValue {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.statLabel {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.statAqi {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 99px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.statAqiGood {
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--accent-green);
+}
+
+.statAqiMod {
+    background: rgba(245, 158, 11, 0.1);
+    color: var(--accent-yellow);
+}
+
+.statAqiPoor {
+    background: rgba(239, 68, 68, 0.1);
+    color: var(--accent-red);
+}

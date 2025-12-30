@@ -1,0 +1,66 @@
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    background: var(--glass);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border-right: 1px solid var(--card-border);
+    z-index: 50;
+}
+
+.logoContainer {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 1rem;
+    background: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.3);
+}
+
+.navItems {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navItem {
+    background: none;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.navItem:hover {
+    color: var(--text-main);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.navItemActive {
+    background: rgba(79, 70, 229, 0.15);
+    color: var(--primary);
+}
+
+.bottomItems {
+    display: flex;
+    justify-content: center;
+}
