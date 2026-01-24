@@ -45,9 +45,11 @@ yarn-error.log
 package-lock.json
 
 # Data and cache
-data/cache/*.jsonl
-data/cache/*.json
+data/
+cache/
+*.jsonl
 *.log
+logs/
 
 # Build
 dist/
@@ -58,3 +60,8 @@ build/
 .pytest_cache/
 .coverage
 htmlcov/
+
+# Deployment (Vercel not used)
+vercel.json
+.vercel/
+api/index.py
